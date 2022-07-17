@@ -1,0 +1,10 @@
+.overplow {
+  width: 99%;
+  height: 200px;
+  overflow: auto;
+  border: 1px solid rgb(63, 58, 58);
+}
+
+.alert {
+  height: 60%;
+}

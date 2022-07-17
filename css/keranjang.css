@@ -1,0 +1,12 @@
+body {
+  width: 100%;
+}
+.konten {
+  margin: auto;
+  background-color: #14ee80;
+  border: 5px dotted #14ee80;
+  width: 99%;
+  height: 200px;
+  overflow: auto;
+  border-radius: 20px;
+}

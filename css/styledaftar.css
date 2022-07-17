@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  width: 400px;
+  height: 500px;
+  background-color: #14ee80;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 80px 200px 80px 80px;
+  animation: container 1s linear 0s 1 normal forwards;
+}
+@keyframes container {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.container .text1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  padding-top: 10px;
+  color: #657d71;
+  animation: text1 1s linear 0s 1 normal forwards;
+  margin-right: 40px;
+}
+
+@keyframes text1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  position: relative;
+  z-index: 2;
+}
+
+form input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"] {
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #657d71;
+  margin-top: 45px;
+  margin-left: 50px;
+  background: transparent;
+  width: 58%;
+}
+
+form input[placeholder="Username"],
+input[placeholder="Password"],
+input[placeholder="Email"],
+input[placeholder="Nomor Hp"],
+input[placeholder="Ulangi Password"] {
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+}
+
+img {
+  position: relative;
+  width: 500px;
+  z-index: 1;
+  margin-top: -220px;
+  margin-left: 50px;
+  animation: img 1s ease 0s 1 normal forwards;
+}
+
+@keyframes img {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+button {
+  display: flexs;
+  position: relative;
+  z-index: 3;
+  border: none;
+  background-color: #d8da67;
+  margin-left: 140px;
+  margin-top: 10px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: black;
+  transition: 0.5s ease;
+}
+
+.linked {
+  margin-top: -150px;
+  margin-left: 100px;
+  font-family: "poppins", sans-serif;
+  font-size: 12px;
+  color: white;
+  position: relative;
+  z-index: 4;
+}
+
+.linked a {
+  cursor: pointer;
+  color: black;
+}

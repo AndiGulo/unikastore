@@ -1,0 +1,43 @@
+
+<?php 
+  $hostname = "localhost";
+  $user = "root";
+  $password = "";
+  $db_name = "unikastore";
+
+  $koneksi = mysqli_connect($hostname,$user,$password,$db_name) or die(mysqli_error($koneksi));
+
+  if(isset($_POST['submit'])) {
+    $username = $_POST ['username'];
+    $email = $_POST ['email'];
+    $password1 = $_POST ['password1'];
+    $password2 = $_POST ['password2'];
+
+    $cek_user = mysqli_query($koneksi,"SELECT * FROM user WHERE username ='$username'");
+    $cek_login =mysqli_num_rows($cek_user);
+
+    if ($cek_login > 0) {
+      echo "<script>
+      alert('Username Telah Terdaftar');
+      window.location = 'daftar.php';
+       </script>";
+    }else {
+      if ($password1 != $password2) {
+        echo "<script>
+      alert('Konfirmasi Password Tidak Sesuai');
+      window.location = 'daftar.php';
+       </script>";
+      }else  {
+        mysqli_query($koneksi, "INSERT INTO user VALUES('',$username,'$email','$password1',)");
+        echo "<script>
+        alert('Data Berhasil Dikirim');
+        window.location = 'isi.php';
+         </script>";
+
+      }
+    }
+
+  }
+
+  
+?>

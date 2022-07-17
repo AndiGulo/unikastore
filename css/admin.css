@@ -1,0 +1,22 @@
+.nav-link .dropdown-toggle:active,
+.open .dropdown-toggle {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.list-group-item {
+  padding: 30px;
+  background-color: #14ee80;
+  color: rgb(79, 74, 74);
+  transition: 1s ease;
+  border: 5px solid white;
+  border-radius: 20px;
+  font-size: 15px;
+  text-align: left;
+}
+
+@media (max-width: 1048px) {
+  .list-group {
+    width: 60%;
+  }
+}
